@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript 인터랙션 예제</title>
+  <script>
+    function increaseCount() {
+      const span = document.getElementById("count");
+      const current = Number(span.textContent);
+      span.textContent = current + 1;
+    }
+  </script>
+</head>
+<body>
+  <h1>버튼 클릭 카운터</h1>
+  <p>버튼을 클릭한 횟수: <span id="count">0</span></p>
+  <button onclick="increaseCount()">클릭!</button>
+</body>
+</html>
